@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock-Paper-Scissors AI</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      color: #2c3e50;
+      margin-top: 20px;
+    }
+    #webcam {
+      display: none;
+      margin-top: 20px;
+      border: 5px solid #3498db;
+      border-radius: 10px;
+    }
+    #prediction {
+      margin-top: 20px;
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    #start-button {
+      margin-top: 30px;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      color: white;
+      background-color: #3498db;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    #start-button:hover {
+      background-color: #2980b9;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #95a5a6;
+    }
+  </style>
+</head>
+<body>
+  <h1>Rock-Paper-Scissors Recognition</h1>
+  <button id="start-button">Start Recognition</button>
+  <video id="webcam" autoplay playsinline></video>
+  <p id="prediction">Click "Start Recognition" to begin!</p>
+
+  <footer>Teachable Machine Learning Exercise</footer>
+  <script src="script.js"></script>
+</body>
+</html>
